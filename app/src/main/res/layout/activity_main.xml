@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_titulo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/icons8_receba_d_lar_96" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VAMOS RACHAR?"
+        android:textSize="40sp"
+        android:textColor="#7502AB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="180dp" />
+
+    <EditText
+        android:id="@+id/edt_conta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="324dp"
+        android:ems="10"
+        android:hint="Valor da Conta"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.711"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_conta"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/edt_conta"
+        tools:layout_editor_absoluteY="307dp"
+        tools:srcCompat="@drawable/icons8_barato_2_96" />
+
+    <EditText
+        android:id="@+id/edt_qtdPessoas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="240dp"
+        android:ems="10"
+        android:hint="Quantidade de Pessoas"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_qtdPessoa"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/edt_qtdPessoas"
+        tools:layout_editor_absoluteY="418dp"
+        tools:srcCompat="@drawable/icons8_multid_o_96" />
+
+    <ImageButton
+        android:id="@+id/btn_compartilhar"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/icons8_c_rculo_64"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_falar"
+        app:srcCompat="@drawable/icons8_partilhar_32"
+        tools:layout_editor_absoluteY="580dp" />
+
+    <ImageButton
+        android:id="@+id/btn_falar"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="88dp"
+        android:background="@drawable/icons8_c_rculo_64"
+        android:onClick="clickFalar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icons8_volume_alto_32"
+        tools:layout_editor_absoluteY="580dp" />
+
+    <TextView
+        android:id="@+id/mensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#7502AB"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="531dp" />
+
+    <TextView
+        android:id="@+id/dev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desenvolvido por Cacá Furtado"
+        android:textSize="15sp"
+        android:textColor="#7502AB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="686dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
